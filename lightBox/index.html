@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.css">
+    <style>
+        body{
+            background-color: darkgrey;
+        }
+      
+        img{
+            width: 150px;
+            height: 110px;
+        }
+        .images{
+            text-align:center;
+            padding-top: 100px;
+        }
+        h1{
+            text-align: center;
+            padding-top: 50px;
+            color: rgb(26, 37, 37);
+            text-shadow: 2px 2px #687484;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .image-link{
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Light Box</h1>
+<div class="images">
+    <a class="image-link" href="node_modules/lightbox2/dist/images/1.jpg" data-lightbox="roadtrip"><img src="node_modules/lightbox2/dist/images/1.jpg" data-title="Click the right half of the image to move forward."></a>
+    <a class="image-link" href="node_modules/lightbox2/dist/images/2.jpg" data-lightbox="roadtrip"><img src="node_modules/lightbox2/dist/images/2.jpg" data-title="Or press the right arrow on your keyboard."></a>
+    <a class="image-link" href="node_modules/lightbox2/dist/images/3.jpg" data-lightbox="roadtrip"><img src="node_modules/lightbox2/dist/images/3.jpg" data-title="The next image in the set is preloaded as you're viewing."></a>
+    <a class="image-link" href="node_modules/lightbox2/dist/images/4.jpg" data-lightbox="roadtrip"><img src="node_modules/lightbox2/dist/images/4.jpg" data-title="Click anywhere outside the image or the X to the right to close."></a>
+</div>
+
+
+
+
+
+    <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+        }) 
+    </script>
+</body>
+
+</html>
